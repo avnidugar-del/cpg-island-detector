@@ -1,0 +1,70 @@
+CpG Island Detector v1.0.0
+Computationally predicted candidate regions based on sequence composition only; not experimentally confirmed CpG islands.
+Criteria: length >= 200 bp, GC > 50 %, Obs/Exp CpG > 0.6, ambiguous fraction <= 0.05
+Scan: window 200 bp, step 10 bp. Coordinates: 1-based, inclusive.
+
+=== synthetic_island_01 (1300 bp) ===
+Composition: A=357 C=293 G=261 T=389 ambiguous=0
+Whole sequence: GC 42.62 %, CpG 34, Obs/Exp 0.578
+Whole sequence meets all criteria: no
+  - GC content 42.62% is not above 50%
+  - Obs/Exp CpG 0.578 is not above 0.6
+Candidate regions: 1
+   #     Start       End  Length     GC%  Obs/Exp   CpG
+   1       351       940     590   53.56    0.711    30
+Map (1 char = 21.7 bp, # = candidate region):
+  |................############################................|
+
+=== synthetic_two_islands_02 (2050 bp) ===
+Composition: A=540 C=507 G=460 T=543 ambiguous=0
+Whole sequence: GC 47.17 %, CpG 86, Obs/Exp 0.756
+Whole sequence meets all criteria: no
+  - GC content 47.17% is not above 50%
+Candidate regions: 2
+   #     Start       End  Length     GC%  Obs/Exp   CpG
+   1       291       690     400   51.00    0.967    25
+   2      1081      1840     760   56.84    0.880    54
+Map (1 char = 34.2 bp, # = candidate region):
+  |........#############..........#######################......|
+
+=== synthetic_gc_rich_cpg_depleted_03 (1000 bp) ===
+Composition: A=185 C=390 G=219 T=206 ambiguous=0
+Whole sequence: GC 60.90 %, CpG 19, Obs/Exp 0.222
+Whole sequence meets all criteria: no
+  - Obs/Exp CpG 0.222 is not above 0.6
+Candidate regions: 0
+Map (1 char = 16.7 bp, # = candidate region):
+  |............................................................|
+
+=== synthetic_at_rich_background_04 (800 bp) ===
+Composition: A=264 C=156 G=126 T=254 ambiguous=0
+Whole sequence: GC 35.25 %, CpG 7, Obs/Exp 0.285
+Whole sequence meets all criteria: no
+  - GC content 35.25% is not above 50%
+  - Obs/Exp CpG 0.285 is not above 0.6
+Candidate regions: 0
+Map (1 char = 13.3 bp, # = candidate region):
+  |............................................................|
+
+=== synthetic_short_cpg_rich_05 (150 bp) ===
+Composition: A=34 C=41 G=49 T=26 ambiguous=0
+Whole sequence: GC 60.00 %, CpG 10, Obs/Exp 0.747
+Whole sequence meets all criteria: no
+  - length 150 bp is below the minimum 200 bp
+Candidate regions: 0
+Map (1 char = 2.5 bp, # = candidate region):
+  |............................................................|
+
+=== synthetic_island_with_Ns_06 (1000 bp) ===
+Composition: A=277 C=249 G=178 T=266 ambiguous=30
+Whole sequence: GC 44.02 %, CpG 38, Obs/Exp 0.832
+Whole sequence meets all criteria: no
+  - GC content 44.02% is not above 50%
+Candidate regions: 2
+   #     Start       End  Length     GC%  Obs/Exp   CpG
+   1       241       460     220   52.86    1.106    16
+   2       471       750     280   52.96    0.968    18
+Map (1 char = 16.7 bp, # = candidate region):
+  |..............###############################...............|
+
+Total: 6 sequence(s), 5 candidate region(s).

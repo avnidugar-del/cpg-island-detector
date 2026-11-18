@@ -1,0 +1,3 @@
+# CpG Island Detector has NO third-party dependencies.
+# It requires Python 3.8 or newer and uses only the standard library
+# (argparse, csv, json, dataclasses, array, pathlib, unittest, ...).

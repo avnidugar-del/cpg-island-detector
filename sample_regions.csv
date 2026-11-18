@@ -1,0 +1,6 @@
+sequence_id,start_bp,end_bp,length_bp,gc_percent,obs_exp_cpg,cpg_count,c_count,g_count,a_count,t_count,ambiguous_count,window_size_bp,step_size_bp,min_length_bp,min_gc_percent,min_obs_exp
+synthetic_island_01,351,940,590,53.56,0.711,30,166,150,122,152,0,200,10,200,50.0,0.6
+synthetic_two_islands_02,291,690,400,51.00,0.967,25,110,94,96,100,0,200,10,200,50.0,0.6
+synthetic_two_islands_02,1081,1840,760,56.84,0.880,54,215,217,175,153,0,200,10,200,50.0,0.6
+synthetic_island_with_Ns_06,241,460,220,52.86,1.106,16,62,49,53,46,10,200,10,200,50.0,0.6
+synthetic_island_with_Ns_06,471,750,280,52.96,0.968,18,81,62,67,60,10,200,10,200,50.0,0.6
